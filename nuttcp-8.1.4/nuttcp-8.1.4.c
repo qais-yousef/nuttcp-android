@@ -652,6 +652,8 @@ typedef int socklen_t;
 #include "addrinfo.h"			/* from missing */
 #endif
 
+#define bcmp(...)	memcmp(__VA_ARGS__)
+
 /*
  * The following macro is from openssh defines.h by Tatu Ylonen and marked "can be used freely for any purpose"
  */
@@ -1193,7 +1195,6 @@ uint32_t clientscope6;		/* scope part of IP address of client */
 #endif
 
 struct hostent *addr;
-extern int errno;
 
 const char Usage[] = "\
 Usage: nuttcp or nuttcp -h	prints this usage info\n\

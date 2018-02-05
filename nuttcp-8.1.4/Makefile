@@ -1,6 +1,6 @@
 APP = nuttcp-8.1.4
 #EXTRAVERSION=-pre1
-CC = gcc -Wall
+CC = arm-linux-androideabi-gcc -Wall
 #OPT = -g -O0
 OPT = -O3
 CFLAGS = $(OPT) $(NOIPV6)
